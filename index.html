@@ -8,6 +8,7 @@
     <title>GM Consulting</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -25,43 +26,116 @@
         <a class="cta" href="#"><button>Contact</button></a>
     </header>
 -->
-    <div data-collapse="medium" data-animation="default" data-duration="400" role="banner" class="navbar-section w-nav">
-        ::before
-        <div class="nav-wrap">
-            <a href="/" aria-current="page" class="logo-link w-nav-brand w--current">
-                <img width="108" class="logo-image" src="" alt="logo">
-            </a>
-            <div class="menu">
-                <nav role="navigation" class="nav-items w-nav-menu">
-                    <a href="#" class="nav-item w-nav-link"> Home</a>
-                    <a href="#" class="nav-item w-nav-link"> About</a>
-                    <a href="#" class="nav-item w-nav-link"> Info</a>
-                </nav>
-                <div class="menu-button w-nav-button">
-                    <img src="https://assets.website-files.com/5c6eb5400253230156de2bd6/5c6eb8fd2f27af658094fa4a_menu-icon.png"
-                        width="22" alt="" class="menu-icon">
+    <!--Page Wrapper-->
+    <div class="page-wrapper">
+        <div data-collapse="medium" data-animation="default" data-duration="400" role="banner" class="navigation w-nav">
+            <div class="nav-wrap">
+                <a href="/" aria-current="page" class="logo-link w-nav-brand w--current">
+                    <img width="108" class="logo-image" src="" alt="logo">
+                </a>
+                <div class="menu">
+                    <nav role="navigation" class="nav-items w-nav-menu">
+                        <a href="#" class="nav-item w-nav-link"> Home</a>
+                        <a href="#" class="nav-item w-nav-link"> About</a>
+                        <a href="#" class="nav-item w-nav-link"> Info</a>
+                    </nav>
+                    <div class="menu-button w-nav-button">
+                        <img src="https://assets.website-files.com/5c6eb5400253230156de2bd6/5c6eb8fd2f27af658094fa4a_menu-icon.png"
+                            width="22" alt="" class="menu-icon">
+                    </div>
                 </div>
+                <!--- <a class="cta" href="#"><button>Contact</button></a> -->
+                <a href="mailto:mail@business.com?subject=You've%20got%20mail!"
+                    class="button cc-contact-us w-inline-block">
+                    <div>Contact US</div>
+                </a>
             </div>
-            <!--- <a class="cta" href="#"><button>Contact</button></a> -->
-            <a href="mailto:mail@business.com?subject=You've%20got%20mail!" class="button cc-contact-us w-inline-block">
-                <div>Contact US</div>
-            </a>
+            <div class="w-nav-overlay" data-wf-ignore></div>
         </div>
-        <div class="w-nav-overlay" data-wf-ignore></div>
-        ::after
-    </div>
 
 
-    <div class="section home-wrap">
-        <div class="intro-header">
-            <div class="intro-content cc-homepage">
-                <div class="intro-text">
-                    <div class="heading-jumbo">GM <br> Consulting</div>
-                    <!--- <div class="paragraph-bigger cc-bigger-white-light">Making strong investments since 2021</div> -->
+        <div class="section cc-store-home-wrap">
+            <div class="intro-header">
+                <div class="intro-content cc-homepage">
+                    <div class="intro-text">
+                        <div class="heading-jumbo">GM <br> Consulting</div>
+                        <!--- <div class="paragraph-bigger cc-bigger-white-light">Making strong investments since 2021</div> -->
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="container">
+                <div class="motto-wrap">
+                    <div class="label cc-light">What we believe in</div>
+                    <div class="heading-jumbo-small"> "Take risks, you never know how big they will pay off." <br>
+                    </div>
+                </div>
+                <div class="divider"></div>
+                <div class="home-content-wrap">
+                    <div class="w-layout-grid about-grid">
+                        <div id="small-about-content-homepage">
+                            <div class="home-section-wrap">
+                                <div class="label cc-light">About</div>
+                                <h2 class="section-heading">Who we are</h2>
+                                <p class="paragraph-light">Some random small paragraph about some random stuff about the
+                                    company will go here if you want to. if not i can take it out however you please.
+                                </p>
+                            </div>
+                            <a href="#" class="button w-inline-block">
+                                <div>Learn More</div>
+                            </a>
+                        </div>
+                        <img src="/images/bw-windmills.jpeg" alt="section-image" id="about-section-homepage-image">
+                    </div>
+                    <div class="w-layout-grid about-grid-2">
+                        <div id="small-team-content-homepage">
+                            <div class="home-section-wrap">
+                                <div class="label cc-light">Team</div>
+                                <h2 class="section-heading">What we do</h2>
+                                <p class="paragraph-light">Some random small paragraph about some random stuff about the
+                                    company will go here if you want to. if not i can take it out however you please.
+                                </p>
+                            </div>
+                            <a href="#" class="button w-inline-block">
+                                <div>Learn More</div>
+                            </a>
+                        </div>
+                        <img src="/images/bw-windmills.jpeg" alt="section-image" id="team-section-homepage-image">
+                    </div>
                 </div>
             </div>
         </div>
+
+
+
     </div>
+    <!--Page Wrapper-->
+
+    <!--Footer-->
+    <div class="footer">
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h1 class="logo-text"><span>GM</span>Consulting</h1>
+                <p>GM consulting is...(insert little info on what the company is)</p>
+                <div class="contact">
+                    <span><i class="fa fa-phone"></i>&nbsp; 123-456-7899</span>
+                    <span><i class="fa fa-envelope"></i>&nbsp; gmconsulting@outlook.com</span>
+                </div>
+            </div>
+            <div class="footer-section links"></div>
+            <div class="footer-section contact-form"></div>
+        </div>
+        <div class="footer-bottom">
+            &copy; https://github.com/villa1023 | Made by Oscar Villa
+        </div>
+        <div class="socials">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+    </div>
+    <!--Footer-->
 </body>
 
 </html>
