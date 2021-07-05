@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 /*default styles for everything*/
 *{
@@ -9,9 +10,9 @@
 
 /*Section for styles for actual html syntax*/
 body, html{
-    /*height: 100%;*/
+    height: 100%;
     margin: 0;
-    min-height: 100%;
+    /*min-height: 100%;*/
     background-color: #fff;
     font-family: Arial,sans-serif;
     font-size: 14px;
@@ -29,7 +30,7 @@ h2 {
 h2 {
     font-size: 32px;
     line-height: 36px;
-    margin-top: 20px;
+   
 }
 h1, h2, h3, h4, h5, h6 {
     font-weight: bold;
@@ -204,10 +205,17 @@ img {
     vertical-align: top;
     text-decoration: none;
     color: #222222;
+    font-size: 18px;
     padding: 20px;
     text-align: left;
     margin-left: auto;
     margin-right: auto;
+    transition: all .4s;
+}
+
+.w-nav-link:hover{
+    color: #d22b2b;
+    transition: all .4s;
 }
 
 .w-nav-button {
@@ -233,7 +241,7 @@ img {
 .button {
     padding: 12px 25px;
     border-radius: 0px;
-    background-color: #1a1b1f;
+    background-color: #d22b2b;
     -webkit-transition: background-color 400ms ease, opacity 400ms ease, color 400ms ease;
     transition: background-color 400ms ease, opacity 400ms ease, color 400ms ease;
     color: #fff;
@@ -288,8 +296,8 @@ img {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    height: 620px;
-    margin-bottom: 100px;
+    height: 100vh;
+    margin-bottom: 50px;
     -webkit-box-pack: center;
     -webkit-justify-content: center;
     -ms-flex-pack: center;
@@ -298,10 +306,11 @@ img {
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
-    background-color: #f4f4f4;
+    background-color: white;
     background-image: url(images/palm-springs-location-banner-bw.jpg);
     background-position: 0px 0px;
-    background-size: cover;
+    background-size: 100%;
+    background-repeat: no-repeat;
     color: #fff;
 }
 
@@ -320,18 +329,21 @@ img {
     transform: translate(-50%, -50%);
     color: rgba(136,8,8,1);
     */
+
     width: 80%;
     margin-right: auto;
-    margin-bottom: 35px;
+    margin-bottom: 100px;
     margin-left: auto;
+    font-family: "Bebas Neue";
 }
 
 .heading-jumbo{
     margin-top: 10px;
-    margin-bottom: 10px;
-    font-size: 64px;
+    margin-bottom: 600px;
+    font-size: 100px;
     line-height: 80px;
     text-transform: none;
+    text-shadow: 2px 2px 4px #000000;
 }
 
 .paragraph-bigger.cc-bigger-white-light {
@@ -488,7 +500,6 @@ min-height: 100%;
 }
 
 .footer .footer-content{
-border: 1px solid red;
 height: 350px;
 display: flex;
 }
@@ -496,7 +507,99 @@ display: flex;
 .footer .footer-content .footer-section{
     flex: 1;
     padding: 25px;
+}
+
+.footer .footer-content h1,
+.footer .footer-content h2{
+    color:#d3d3d3;
+}
+
+.footer .footer-content .about h1 span{
+    color: #d22b2b;
+}
+
+.footer .footer-content .about .contact span {
+    display: block;
+    font-size: 1.1em;
+    margin-bottom: 8px;
+}
+
+.footer .footer-content .about .socials a{
+    border: 1px solid gray;
+    width: 45px;
+    height: 41px;
+    padding-top: 10px;
+    margin-right: 5px;
+    margin-top: 10px;
+    text-align: center;
+    display: inline-block;
+    font-size: 1.3em;
+    border-radius: 5px;
+    color:gray;
+    transition: all .4s;
+}
+
+.footer .footer-content .about .socials a:hover{
     border: 1px solid white;
+    color: white;
+    transition: all .4s;
+}
+
+.footer .footer-content .links ul a {
+display: block;
+margin-bottom: 10px;
+font-size: 1.3em;
+color: #d3d3d3;
+text-decoration: none;
+transition: all .4s;
+}
+
+.footer .footer-content .links ul a:hover{
+    color: white;
+    margin-left: 15px;
+    transition: all .4s;
+}
+
+.footer .footer-content .contact-form .contact-input {
+    background: #272727;
+    color: #bebdbd;
+    margin-bottom: 10ppx;
+    line-height: 1.5rem;
+    padding: .9rem 1.4rem;
+    width: 100%;
+    border: none;
+}
+
+.footer .footer-content .contact-form .contact-btn{
+    float: right;
+}
+
+.btn {
+    padding: .5rem 1rem;
+    background: #d22b2b;
+    color: white;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+}
+
+.btn-big {
+    padding: .7rem 1.3rem;
+    line-height: 1.3rem;
+    margin-top: 10px;
+}
+
+.btn:hover{
+    color: white !important;
+    background: red;
+}
+
+textarea{
+    height: 100px;
+}
+
+input{
+    margin-bottom: 20px;
+    margin-top: -200px;
 }
 
 .footer .footer-bottom{
@@ -511,6 +614,9 @@ display: flex;
     padding-top: 20px;
 }
 
+.footer-title-text{
+    padding-bottom: 10px;
+}
 
 
 
